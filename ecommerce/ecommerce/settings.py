@@ -36,9 +36,8 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "templates",  # added manually
-    "blog",  # added manually
-    "shop",  # added manually
+    "blog.apps.BlogConfig",  # added manually
+    "shop.apps.ShopConfig",  # added manually
     "django.contrib.staticfiles",
 ]
 
@@ -118,8 +117,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = "static/"
-# added manually
-STATICFILES_DIRS = [BASE_DIR / "static"]
 
 
 # Email
